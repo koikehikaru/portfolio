@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+
+/* -- form#mail_form, dl, dt, dd -------------------------------------------------------------------------------- */
+
+form#mail_form * {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+form#mail_form {
+	width: 1000px;
+	margin: 50px auto;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 7px;
+	box-shadow: 0 0 7px rgba( 0, 0, 0, 0.2 );
+	line-height: 1.8;
+}
+
+form#mail_form dl {
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #cccccc;
+}
+
+form#mail_form dl:after,
+form#mail_form dl dt:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+form#mail_form dl dt {
+	width: 30%;
+	float: left;
+	padding: 35px 0 25px;
+	text-align: right;
+}
+
+form#mail_form dl dd {
+	width: 65%;
+	float: right;
+	padding: 30px 0 25px 5%;
+}
+
+form#mail_form dl dt i {
+	float: left;
+	position: relative;
+	top: -2px;
+}
+
+
+
+
+/* -- span.required, span.optional -------------------------------------------------------------------------------- */
+
+form#mail_form dl dt span.required,
+form#mail_form dl dt span.optional {
+	display: inline-block;
+	font-size: 85%;
+	color: #ffffff;
+	padding: 4px 10px;
+	border-radius: 3px;
+}
+
+form#mail_form dl dt span.required {
+	background: #d9534f;
+	border: 1px solid #d43f3a;
+}
+
+form#mail_form dl dt span.optional {
+	background: #337ab7;
+	border: 1px solid #2e6da4;
+}
+
+
+
+
+/* -- error message -------------------------------------------------------------------------------- */
+
+form#mail_form dl dd span.error_blank,
+form#mail_form dl dd span.error_format,
+form#mail_form dl dd span.error_match {
+	display: block;
+	color: #ff0000;
+	margin-top: 5px;
+}
+
+
+
+
+/* -- loading -------------------------------------------------------------------------------- */
+
+div.loading-layer {
+	width: 100vw;
+	height: 100vh;
+	background: rgba( 0, 0, 0, 0.7 );
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 10000;
+}
+
+span.loading {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-top: 5px solid rgba( 255, 255, 255, 0.2 );
+	border-right: 5px solid rgba( 255, 255, 255, 0.2 );
+	border-bottom: 5px solid rgba( 255, 255, 255, 0.2 );
+	border-left: 5px solid #ffffff;
+	-webkit-transform: translateZ( 0 );
+	-ms-transform: translateZ( 0 );
+	transform: translateZ( 0 );
+	-webkit-animation: load-circle 1.0s linear infinite;
+	animation: load-circle 1.0s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+
+@-webkit-keyframes load-circle {
+	0% {
+		-webkit-transform: rotate( 0deg );
+		transform: rotate( 0deg );
+	}
+	100% {
+		-webkit-transform: rotate( 360deg );
+		transform: rotate( 360deg );
+	}
+}
+
+@keyframes load-circle {
+	0% {
+		-webkit-transform: rotate( 0deg );
+		transform: rotate( 0deg );
+	}
+	100% {
+		-webkit-transform: rotate( 360deg );
+		transform: rotate( 360deg );
+	}
+}
+
+
+
+
+/* -- input, select, textarea -------------------------------------------------------------------------------- */
+
+form#mail_form input[type="text"],
+form#mail_form input[type="email"],
+form#mail_form input[type="tel"] {
+	width: calc( 100% - 4% - 2px );
+	padding: 7px 2%;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	background: #fafafa;
+	-webkit-appearance: none;
+	font-size: 16px;
+	font-family: inherit;
+	line-height: normal;
+}
+
+form#mail_form input[type="text"]:focus,
+form#mail_form input[type="email"]:focus,
+form#mail_form input[type="tel"]:focus,
+form#mail_form textarea:focus {
+	box-shadow: 0px 0px 5px #55ccff;
+	border: 1px solid #55ccff;
+	background: #ffffff;
+}
+
+form#mail_form ul li input[type="radio"],
+form#mail_form ul li input[type="checkbox"] {
+	margin: 0 10px 0 0;
+}
+
+form#mail_form select {
+	padding: 7px 2%;
+	border: 1px solid #cccccc;
+	font-size: 16px;
+	font-family: inherit;
+	line-height: normal;
+}
+
+form#mail_form textarea {
+	display: block;
+	width: calc( 100% - 4% - 2px );
+	height: 200px;
+	padding: 7px 2%;
+	resize: vertical;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	background: #fafafa;
+	-webkit-appearance: none;
+	font-size: 16px;
+	font-family: inherit;
+	line-height: normal;
+}
+
+
+
+
+/* -- ul, li -------------------------------------------------------------------------------- */
+
+form#mail_form ul {
+	list-style-type: none;
+}
+
+form#mail_form ul li label {
+	display: block;
+	margin-top: 10px;
+	padding: 7px 2%;
+	border-radius: 3px;
+	background: #f0f0f0;
+}
+
+form#mail_form ul li:first-child label {
+	margin-top: 0px;
+}
+
+form#mail_form ul li label:hover {
+	cursor: pointer;
+	background: #e0e0e0;
+}
+
+
+
+
+/* -- input design -------------------------------------------------------------------------------- */
+
+form#mail_form input[name="company"] {
+	width: 70%;
+}
+
+form#mail_form input[name="name_1"],
+form#mail_form input[name="name_2"],
+form#mail_form input[name="read_1"],
+form#mail_form input[name="read_2"],
+form#mail_form input[name="postal"],
+form#mail_form input[name="phone"],
+form#mail_form input[name="schedule"] {
+	width: 30%;
+}
+
+form#mail_form input[name="mail_address"],
+form#mail_form input[name="mail_address_confirm"] {
+	width: 80%;
+}
+
+form#mail_form input[name="postal"] + a {
+	display: inline-block;
+	padding: 7px 20px;
+	border: 1px solid #46b8da;
+	border-radius: 3px;
+	background: #5bc0de;
+	font-size: 16px;
+	line-height: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+form#mail_form input[name="postal"] + a:hover {
+	cursor: pointer;
+	background: #31b0d5;
+	border: 1px solid #269abc;
+}
+
+
+
+
+/* -- button -------------------------------------------------------------------------------- */
+
+form#mail_form p#form_submit {
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+form#mail_form input[type="button"] {
+	padding: 7px 20px;
+	border: 1px solid #4cae4c;
+	border-radius: 3px;
+	background: #5cb85c;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: inherit;
+	-webkit-appearance: none;
+}
+
+form#mail_form input[type="button"]:hover {
+	cursor: pointer;
+	background: #449d44;
+	border: 1px solid #398439;
+}
+
+form#mail_form input[type="button"] {
+	margin-left: 35%;
+}
+
+
+
+
+
+
+
+
+/* -- responsive ----------------------------------------------------------------------------------------------------------------------- */
+
+/* 1000pixel start */
+@media screen and ( max-width: 1000px ) {
+
+
+/* -- form#mail_form, dl, dt, dd -------------------------------------------------------------------------------- */
+
+form#mail_form {
+	width: 95%;
+	font-size: 100%;
+}
+
+form#mail_form dl dt {
+	width: auto;
+	float: none;
+	padding: 25px 0 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+form#mail_form dl dd {
+	width: auto;
+	float: none;
+	padding: 0px 0 20px 0px;
+}
+
+form#mail_form dl dt i {
+	float: none;
+	position: static;
+	font-weight: normal;
+}
+
+
+
+
+/* -- span.required, span.optional -------------------------------------------------------------------------------- */
+
+form#mail_form dl dt span.required,
+form#mail_form dl dt span.optional {
+	margin: 0 15px 0 0;
+}
+
+
+
+
+/* -- input design -------------------------------------------------------------------------------- */
+
+form#mail_form input[name="phone"],
+form#mail_form input[name="schedule"] {
+	width: 60%;
+}
+
+
+
+
+/* -- button -------------------------------------------------------------------------------- */
+
+form#mail_form p#form_submit {
+	padding: 25px 0;
+}
+
+form#mail_form input[type="button"] {
+	margin-left: 0;
+}
+
+
+}
+/* 1000pixel end */
+
+
+
+
+
+
+
+

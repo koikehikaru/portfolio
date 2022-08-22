@@ -1,0 +1,86 @@
+body {
+  /* background-color: #424242; */
+  background:url(https://zizo.ne.jp/assets/images/common/bg_contents.jpg);
+  /* color: #fff; */
+  color: #030303;
+}
+
+h2 {
+  position: relative;
+  color: #FAC600;
+  /* color: #ffffff45; */
+  font-family: HeadLineA;
+  letter-spacing: 11.25px;
+  font-size: 65px;
+  text-align: center;
+}
+
+h2 span {
+  position: absolute;
+  font-size: 20px;
+  font-family: Hiragino Sans;
+  letter-spacing: 1px;
+  color: #4f4f4f;
+  bottom: -5px;
+  margin-left: -100px;
+}
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 30px;
+  border-spacing: 0;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  margin-bottom: 50px;
+}
+
+
+table th,
+table td {
+  padding: 15px 0;
+  text-align: left;
+  padding: 30px 66px 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+tr:not(:first-child) {
+  border-top: 1px solid;
+  border-color:rgb(176, 176, 176);
+}
+
+
+section p {
+  text-align: center;
+}
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 25px;
+  margin: 30px auto;
+  /* background: #8e8e8e2c; */
+  background-color:gray;
+  font-family: Hiragino Mincho ProN;
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+.btn-link {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 750px) {
+  table th,
+  table td {
+    font-size: 12px;
+  }
+}

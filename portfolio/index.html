@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      id="fontawsom-css"
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css?ver=5.8.0"
+      type="text/css"
+      media="all"
+    />
+    <!-- swiper読み込み -->
+  </head>
+  <body>
+    <div id="load" class="load" style="display: none">
+      <div id="load_back" class="load-back"></div>
+      <div class="load-top"><span>Your Name</span></div>
+    </div>
+    <section id="top" class="top">
+      <ul class="fade-img">
+        <li class="fade-img-01"></li>
+        <li class="fade-img-02"></li>
+        <li class="fade-img-03"></li>
+        <li class="fade-img-04"></li>
+        <li class="fade-img-05"></li>
+        <li class="fade-img-06"></li>
+      </ul>
+      <div class="top-wrapper">
+        <div class="top-logo">
+          <h1 class="top-logo-title">
+            Koike Hikaru
+          </h1>
+          <div id="logoText" class="top-logo-text">
+            <p>Web Creater</p>
+          </div>
+        </div>
+        <a class="btn-link" href="./form/index.html">
+          <div class="btn">ご連絡はこちら</div>
+        </a>
+        <div class="top-text">
+          <p>あなただけのWebサイトを</p>
+        </div>
+      </div>
+    </section>
+    <header id="header">
+      <div class="pc-header">
+        <nav class="inner header">
+          <div class="header-logo"><a href="#top"></a></div>
+          <ul id="" class="header-list">
+            <a href="#" aria-current="page">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-23"
+              >
+                HOME
+              </li>
+            </a>
+            <a href="#work">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"
+              >
+                WORK
+              </li>
+            </a>
+            <a href="#service">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"
+              >
+                SERVICE
+              </li>
+            </a>
+            <a href="#about">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"
+              >
+                ABOUT
+              </li>
+            </a>
+            <a href="#skills">
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"
+              >
+                SKILLS
+              </li>
+            </a>
+            <a href="#contact">
+              <li
+                id="menu-item-25"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"
+              >
+                CONTACT
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div class="sp-header">
+        <div id="toggle" class="header-toggle">
+          <span id="toggle_one" class="toggle_one_active"></span>
+          <span id="toggle_two" class="toggle_two_active"></span>
+          <span id="toggle_three" class="toggle_three_active"></span>
+        </div>
+        <div class="header-sp">
+          <nav>
+            <ul
+              id="menu-%e3%83%89%e3%83%ad%e3%83%af%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc"
+              class="header-sp-list"
+            >
+              <li
+                id="menu-item-50"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-50"
+              >
+                <a href="#" aria-current="page"
+                  ><i class="fas fa-home"></i>HOME</a
+                >
+              </li>
+              <li
+                id="menu-item-80"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"
+              >
+                <a href="/work/"><i class="fas fa-briefcase"></i>WORK</a>
+              </li>
+              <li
+                id="menu-item-53"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"
+              >
+                <a href="/service/"><i class="fas fa-tasks"></i>SERVICE</a>
+              </li>
+              <li
+                id="menu-item-51"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"
+              >
+                <a href="/about/"><i class="far fa-address-card"></i>ABOUT</a>
+              </li>
+              <li
+                id="menu-item-52"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"
+              >
+                <a href="/contact/"><i class="far fa-envelope"></i>CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="work" class="work"> <!--effect-fade-->
+      <div class="banner">
+        <div class="inner effect-fade">
+          <h2
+            data-wow-offset="100"
+            class="wow fadeIn banner-title banner-title-work"
+          >
+            WORK<span>これまでの制作物</span>
+          </h2>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="work-wrapper swiper-container effect-fade">
+            <ul class="work-contents swiper-wrapper">
+              <li class="work-content swiper-slide">
+                <a href="https://google.com" class="sp-only">
+                  <p class="img"><img src="./img/mv/photo.png" alt="" /></p>
+                </a>
+                <p class="img pc-only"><img src="./img/mv/photo.png" alt="" /></p>
+                <div class="work-content-text">
+                  <p class="work-name">実践コーディング</p>
+                  <p class="work-dis">Webサイト制作</p>
+                  <p class="work-detail">
+                    実際にレスポンシブサイトをコーディングしました。
+                  </p>
+                  <p class="detail pc-only"><a href="">詳しく見る</a></p>
+                </div>
+              </li>
+              <li class="work-content swiper-slide">
+                <a href="https://google.com" class="sp-only">
+                  <p class="img"><img src="./img/mv/photo3.png" alt="" /></p>
+                </a>
+                <p class="img pc-only"><img src="./img/mv/photo3.png" alt="" /></p>
+
+                <div class="work-content-text">
+                  <p class="work-name">実践コーディング</p>
+                  <p class="work-dis">Webサイト制作</p>
+                  <p class="work-detail">
+                    BootStrapでレスポンシブサイトをコーディングしました。
+                  </p>
+                  <p class="detail pc-only"><a href="">詳しく見る</a></p>
+                </div>
+              </li>
+              <li class="work-content swiper-slide">
+                <a href="https://google.com" class="sp-only">
+                  <p class="img"><img src="./img/mv/photo2.png" alt="" /></p>
+                </a>
+                <p class="img pc-only"><img src="./img/mv/photo2.png" alt="" /></p>
+
+                <div class="work-content-text">
+                  <p class="work-name">実践コーディング</p>
+                  <p class="work-dis">Webサイト制作</p>
+                  <p class="work-detail">
+                    BootStrapでレスポンシブサイトをコーディングしました。
+                  </p>
+                  <p class="detail pc-only"><a href="">詳しく見る</a></p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination pc-only"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar pc-only"></div>
+        </div>
+      </div>
+    </section>
+    <section id="service" class="service "><!--effect-fade-->
+      <div class="banner effect-fade">
+        <div class="inner">
+          <h2
+            data-wow-offset="100"
+            class="wow fadeIn banner-title banner-title-service left"
+          >
+            SERVICE<span>私のサービス</span>
+          </h2>
+        </div>
+      </div>
+      <div class="service-wrapper effect-fade">
+        <div class="inner">
+          <ul class="service-items ">
+            <li class="service-item">
+              <div class="service-item-logo">
+                <!-- <i class="fas fa-desktop"></i> -->
+              </div>
+              <p class="service-item-ttl">ホームページ制作</p>
+              <p class="service-item-text">
+                お客様のサービスの魅力を最大限にお伝えする<br>
+                Webサイト制作をお手伝いいたします。<br>
+              <span id="span">最大限の効果を発揮できる</span>サイト作りを一緒に実現しましょう。ディレクションからデザイン、構築、保守・運用までサポートいたします。
+              </p>
+            </li>
+            <li class="service-item">
+              <figure><img src="./img/mv/work.jpg" alt=""></figure>
+            </li>
+          </ul>
+          </div>
+          <a class="btn-link" href="price.html">
+            <div class="btn">詳しい料金など</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about"> <!--effect-fade-->
+      <div class="banner">
+        <div class="inner  effect-fade">
+          <h2
+            data-wow-offset="100"
+            class="wow fadeIn banner-title banner-title-about left"
+          >
+            ABOUT<span>私について</span>
+          </h2>
+        </div>
+      </div>
+      <div class="inner  effect-fade">
+        <div class="about-text wow fadeIn" data-wow-offset="350">
+          <div class="about-top">
+            <p class="about_img"><img src="./img/mv/IMG_1409.jpg" alt=""/></p>
+            <h3 class="name">
+              <span class="name-l">小池　陽翔</span
+              ><span class="name-s">Koike Hikaru</span>
+            </h3>
+            
+          </div>
+          <div class="about-text-wrap">
+            <h4>小池　陽翔 / Webクリエイター</h4>
+            <div class="career">
+              <h5>-経歴-</h5>
+              <ul>
+                <li><p>・2021年 専門学校でプログラミングを学ぶ</p></li>
+                <li><p>・現在、フリーでWebサイト制作を中心に活動中。</p></li>
+              </ul>
+            </div>
+            <div class="career">
+              <h5>-活動拠点-</h5>
+              <p>和歌山県</p>
+            </div>
+            <div class="career">
+              <h5>-想い-</h5>
+              <p>
+                私はお客様の想いを汲み取って、「あなただけのWebサイト」を真心込めて作成しております。
+              </p>
+              <p>
+                一切の妥協もせず、お客様に寄り添ってサイト制作のお手伝いをさせていただきます。
+              </p>
+            </div>
+          </div>
+            <!-- <a class="btn-link" href="/about">
+              <div class="btn">詳しいプロフィール</div>
+            </a> -->
+        </div>
+      </div>
+      <div class="banner"></div>
+      <div class="banner"></div>
+    </section>
+    <section id="skills" class="skills "> <!--effect-fade-->
+      <div class="banner ">
+        <div class="inner effect-fade">
+          <h2
+            data-wow-offset="100"
+            class="wow fadeIn banner-title banner-title-skill center"
+          >
+            SKILLS<span>できること</span>
+          </h2>
+        </div> 
+      </div>
+      <div class="skills-wrap effect-fade">
+        <div class="skill-item">
+          <i class="fab fa-html5 fa-2x"></i>
+          <h5 class="skill-name">
+            HTML5
+          </h5>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3-alt fa-2x"></i>
+          <h5 class="skill-name">
+            CSS3
+          </h5>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js-square fa-2x"></i>
+          <h5 class="skill-name">
+            JS
+          </h5>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-sass fa-2x"></i>
+          <h5 class="skill-name">
+            SASS
+          </h5>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact" class="contact "> <!--edffect-fae-->
+      <div class="banner">
+        <div class="inner effect-fade">
+          <h2
+            data-wow-offset="100"
+            class="wow fadeIn banner-title banner-title-contact center"
+          >
+            CONTACT<span>お問い合わせ</span>
+          </h2>
+        </div>
+      </div>
+      <div class="inner effect-fade">
+        <div class="contact-text">
+          <p>
+            電話でのお問い合わせ
+          </p>
+          <h4 class ="tel">080-3863-5807</h4>
+          <p>メールでのお問い合わせは下記リンクからお問い合わせください</p>
+        </div>
+        <a class="btn-link" href="./form/index.html">
+          <div class="btn">ご連絡はこちらから</div>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <!-- <div class="sns-container">
+        <ul
+          id="menu-%e3%83%95%e3%83%83%e3%82%bf%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc"
+          class="sns-container-list"
+        >
+          <li
+            id="menu-item-224"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"
+          >
+            <a
+              href="#"
+              target="_brank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li
+            id="menu-item-224"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"
+          >
+            <a
+              href="#"
+              target="_brank"
+              rel="noopener noreferrer"
+            >
+            <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+          <li
+            id="menu-item-225"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-225"
+          >
+            <a
+              href="#"
+              target="_brank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </li>
+        </ul> -->
+      <!-- </div> -->
+      <p class="copy-right">&copy; 2022. Koike Hikaru Portfolio.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script
+      type="text/javascript"z
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js?ver=3.4.1"
+    ></script>
+
+    <!-- swiper読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+    <!-- swiper初期化 -->
+    <script>
+      let mySwiper = new Swiper ('.swiper-container', {
+        loop: true, //最後に達したら先頭に戻る
+        pagination: {
+          el: '.swiper-pagination', //ページネーションの要素
+          type: 'bullets', //ページネーションの種類
+          clickable: true, //クリックに反応させる
+        },
+        navigation: {
+          nextEl: '.swiper-button-next', //「次へボタン」要素の指定
+          prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+        },
+        //スクロールバー表示の設定
+        scrollbar: {
+          el: '.swiper-scrollbar', //要素の指定
+        },
+      })
+      </script>
+  </body>
+</html>
